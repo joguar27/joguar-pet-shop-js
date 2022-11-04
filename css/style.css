@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: rgb(167, 202, 202);
+  height: 90vh;
+}
+
+.main-quienes-somos {
+  background-color: rgb(167, 202, 202);
+  height: 90vh;
+}
+
+.main-galeria {
+    background-color: rgb(167, 202, 202);
+    height: 90vh;
+}
+
+.main-contacto {
+    background-color: rgb(167, 202, 202);
+    height: 90vh;
+}
+
+.footer {
+  background-color: rgb(135, 160, 207);
+}
+
+.footer {
+  background-image: linear-gradient(to bottom, #ebcdcd, #878484); }
+
+.footer ul {
+  display: flex;
+  width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-between; }
+
+.footer li {
+  padding: 5px;
+  list-style: none; }
+
+.footer a {
+  color: white; }
+
+.footer ul a:hover {
+  color: black; }
+
+.footer p {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  padding-bottom: 20px;
+  text-align: center; }
+
+.fa-whatsapp {
+  font-size: 35px; }
+
+.fa-twitter {
+  font-size: 35px; }
+
+.fa-instagram {
+  font-size: 35px; }
+
+.fa-square-facebook {
+  font-size: 55px; }
