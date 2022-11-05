@@ -269,6 +269,7 @@ for (const propiedad in producto005) {
 //array
 //metodos
 const producto = ["Alimento Perros Chico", "Alimento Perros Mediano", "Alimento Perros Grande", "Alimento Gatos Chico", "Alimento Gatos Mediano", "Alimento Gatos Grande"];
+
 console.log(producto);
 console.log(producto[4]);
 
@@ -301,4 +302,21 @@ if (producto.includes("Alimento Aves")) {
     console.log("Alimento Aves no tenemos en stock!!!");
 }
 
+//let alimentoAperros = 5000;
+//let alimentoBperros = 8000;
+//let alimentoCperros = 10000;
+
+//let alimentoAgatos = 1000;
+//let alimentoBgatos = 1500;
+//let alimentoCgatos = 2000;
+
+
+let precios = [ 5000, 8000, 10000, 1000, 1500, 2000]
+
+console.log(precios);
+
+let sumaArray = precios[2] + precios[5];
+console.log(sumaArray);
+
+console.log(precios.length);
 
