@@ -313,10 +313,90 @@ if (producto.includes("Alimento Aves")) {
 
 let precios = [ 5000, 8000, 10000, 1000, 1500, 2000]
 
-console.log(precios);
+console.log(precios.join(" / "));
+
 
 let sumaArray = precios[2] + precios[5];
 console.log(sumaArray);
 
 console.log(precios.length);
+
+
+//let compraCliente = [];
+let compraCliente = (prompt("Ingrese su compra"));
+
+for(let i = 0; i < compraCliente; i++) {
+
+}
+
+console.log(compraCliente);
+
+
+//funcion con retorno: ejemplo para sumar el valor total de determinados productos.
+function asignarOperacion(op) {
+    if (op == "sumar") {
+        return (a, b, c, d) => a + b + c + d
+    } else if (op == "restar") {
+        return (a, b) => a - b
+    }
+}
+
+let suma = asignarOperacion("sumar");
+
+console.log(suma(5000, 10000, 1000, 2000));
+
+
+
+//funcion por parametro: para mostrar el valor de cada producto en stock.
+function porCadaUno(arr, fn) {
+    for (const el of arr) {
+        fn(el);
+    }
+}
+let precio = [5000, 8000, 10000, 1000, 1500, 2000];
+porCadaUno(precio, console.log);
+
+
+//funcion por parametro: ejemplo para saber el valor total de mi stock.
+let total = 0;
+function acumular(precio){
+    total += precio;
+}
+porCadaUno(precio, acumular);
+console.log(total);
+
+
+
+//metodo find: ejemplo para saber si hay un producto y su valor.
+const Products = [{nombre: "Alimento Perros Chico", precio: 5000}, {nombre: "Alimento Perros Mediano", precio: 8000}, {nombre: "Alimento Perros Grande", precio: 10000}, {nombre: "Alimento Gatos Chico", precio: 1000}, {nombre: "Alimento Gatos Mediano", precio: 1500}, {nombre: "Alimento Gatos Grande", precio: 2000}];
+const Resultado = Products.find((el) => el.nombre === "Alimento Perros Mediano");
+console.log(Resultado);
+
+
+//filter: ejemplo para buscar productos por palabra clave (por ej: Gatos)
+const Product = [{nombre: "Alimento Perros Chico", precio: 5000}, {nombre: "Alimento Perros Mediano", precio: 8000}, {nombre: "Alimento Perros Grande", precio: 10000}, {nombre: "Alimento Gatos Chico", precio: 1000}, {nombre: "Alimento Gatos Mediano", precio: 1500}, {nombre: "Alimento Gatos Grande", precio: 2000}];
+const Result = Products.filter((el) => el.nombre.includes("Gatos"));
+console.log(Result);
+
+
+//filter: ejemplo para buscar productos por precio (por ej: <= 8000)
+const product = [{nombre: "Alimento Perros Chico", precio: 5000}, {nombre: "Alimento Perros Mediano", precio: 8000}, {nombre: "Alimento Perros Grande", precio: 10000}, {nombre: "Alimento Gatos Chico", precio: 1000}, {nombre: "Alimento Gatos Mediano", precio: 1500}, {nombre: "Alimento Gatos Grande", precio: 2000}];
+const result = product.filter((el) => el.precio <= 8000);
+console.log(result);
+
+
+//reduce: ejemplo para mostrar el total de mi compra.
+const miCompra = [{nombre: "Alimento Perros Grande", precio: 10000}, {nombre: "Alimento Gatos Mediano", precio: 1500}, {nombre: "Alimento Gatos Grande", precio: 2000}];
+//const price = [10000, 1500, 2000];
+const totalCompra = miCompra.reduce((acumulador, elemento) => acumulador + elemento.precio, 0);
+console.log(totalCompra);
+
+//sort: ejemplo si quiero ordenar los precios de mayor a menor.
+let price = [5000, 8000, 10000, 1000, 1500, 2000];
+price.sort((a, b,) => b - a);
+console.log(price);
+
+//math: para sacar el valor minimo o maximo dentro de los precios.
+console.log(Math.min(5000, 8000, 10000, 1000, 1500, 2000));
+console.log(Math.max(5000, 8000, 10000, 1000, 1500, 2000));
 
