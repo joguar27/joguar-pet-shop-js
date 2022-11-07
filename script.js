@@ -53,7 +53,7 @@ let productos = 0;
 prompt("Ingrese su pedido");
 let pedido = prompt("Ingrese su pedido");
 alert("El cliente ingreso: " + pedido);
-console.log("El cliente ingresó: " * pedido);
+//console.log("El cliente ingresó: " * pedido);
 console.log("El cliente ingreso: " + pedido);
 
 
@@ -399,4 +399,10 @@ console.log(price);
 //math: para sacar el valor minimo o maximo dentro de los precios.
 console.log(Math.min(5000, 8000, 10000, 1000, 1500, 2000));
 console.log(Math.max(5000, 8000, 10000, 1000, 1500, 2000));
+
+
+
+ 
+
+
 
