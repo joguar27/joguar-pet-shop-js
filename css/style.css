@@ -24,6 +24,10 @@
     height: 90vh;
 }
 
+.cardtext1 {
+  background-color: rgb(167, 106, 106);
+}
+
 .footer {
   background-color: rgb(135, 160, 207);
 }
