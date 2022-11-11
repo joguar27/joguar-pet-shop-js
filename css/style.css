@@ -14,6 +14,20 @@
   height: 90vh;
 }
 
+.botones{
+  background-color: burlywood;
+  padding: 10px;
+  text-align: center;
+}
+
+.botones button input{
+  border: solid, black, 20px;
+}
+
+
+
+
+
 .main-galeria {
     background-color: rgb(167, 202, 202);
     height: 90vh;

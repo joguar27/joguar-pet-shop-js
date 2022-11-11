@@ -555,9 +555,25 @@ function mostrarDatos(){
 }
 
 
+//mouseMove
+let botonMove = document.getElementById("move");
+botonMove.addEventListener("mousemove", mover);
+function mover(){
+    console.log("mover");
+}
 
 
 
+//mouseover
+let contarVirus = 0;
+let tituloBienvenida = document.getElementById("titulo");
+tituloBienvenida.addEventListener("mouseover", estoyArriba);
+function estoyArriba(){
+    console.log("arriba de Bienvenida");
+    alert("Hola soy un virus");
+    confirm("Quiere instalar un antivirus?");
+    contarVirus++
+}
 
 
 
