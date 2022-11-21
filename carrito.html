@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JOGUAR | INICIO</title>
+    <title>JOGUAR | CARRITO</title>
     <!-- Link para Bs -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -24,7 +25,6 @@
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">JOGUAR PET SHOP</a>
-        <a id="btn-carrito" class="navbar-brand" href="#">verCarrito </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link" href="index.html"
                 >INICIO</a
               >
             </li>
@@ -52,12 +52,16 @@
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">CONTACTO</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="carrito" aria-current="page" href="carrito.html">CARRITO</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <section class="main d-flex justify-content-center align-items-center">
+      <!-- <img src="./assets/fotos/TavoYeiko1.jpg" alt="tavoyeiko"> -->
       <h2 id="titulo" class="text-white bg-dark p-2 rounded">
         BIENVENIDOS A JOGUAR PET SHOP
       </h2>
@@ -78,111 +82,144 @@
       <div id="mostrarDatos">aqui...mostrar</div>
 
       <button id="move">On Move</button>
+    </div>
+    <h2>Formulario</h2>
+    <form id="formulario">
+      <input type="text" />
+      <input type="number" />
+      <input type="date" />
+      <input type="color" />
+      <input type="submit" value="Enviar" />
+    </form> -->
+
+
+
+
+    <!-- contenedor productos -->
+    <!-- <div id="shopContent">
+
+    </div>
+
+    <--contenedor carrito -->
+    <!-- <div id="contenedorCarrito">
+
     </div> -->
+
+
+
 
     <!-- <ul id="productosA"></ul> -->
 
-    <section id="shopContent" class="card-group">
+
+
+
+    <section class="container">
       <div id="aAp1" class="row mt-5">
         <div class="col-md-4">
           <div class="card">
-            <img src="./assets/fotos/alimentoPerros1.jpg" class="card-img-top" alt="AlimentoPerros.jpg" />
+            <img
+              src="./assets/fotos/alimentoPerros1.jpg"
+              class="card-img-top"
+              alt="alimentoAperros"
+            />
             <div class="card-body">
               <h5 id="card1" class="card-title">alimentoAperros</h5>
               <p id="cardtext1" class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                id:001, nombre: "alimentoAperros", peso: 5, precio: 5000
               </p>
-              <a id="boton1" href="#" class="btn btn-primary">Comprar</a>
+              <a id="boton1" href="#" class="btn btn-primary"
+                >Agregar al Carrito</a
+              >
             </div>
           </div>
         </div>
         <div id="aBp2" class="col-md-4">
           <div class="card">
-            <img src="./assets/fotos/alimentoPerros1.jpg" class="card-img-top" alt="AlimentoPerros.jpg" />
+            <img
+              src="./assets/fotos/alimentoPerros1.jpg"
+              class="card-img-top"
+              alt="alimentoBperros"
+            />
             <div class="card-body">
               <h5 class="card-title">alimentoBperros</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                id:002, nombre: "alimentoBperros", peso: 10, precio: 8000
               </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="./assets/fotos/alimentoPerros1.jpg" class="card-img-top" alt="AlimentoPerros.jpg" />
+            <img
+              src="./assets/fotos/alimentoPerros1.jpg"
+              class="card-img-top"
+              alt="alimentoCperros"
+            />
             <div class="card-body">
               <h5 class="card-title">alimentoCperros</h5>
               <p id="parrafo3" class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                id:003, nombre: "alimentoCperros", peso: 15, precio: 10000
               </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- </section> -->
-
-    <!-- <section id="shopContent" class="card-group">> -->
-      <div class="row mt-5">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="./assets/fotos/alimentoGatos1.jpg" class="card-img-top" alt="AlimentoGatos.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">alimentoAgatos</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="./assets/fotos/alimentoGatos1.jpg" class="card-img-top" alt="AlimentoGatos.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">alimentoBgatos</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="./assets/fotos/alimentoGatos1.jpg" class="card-img-top" alt="AlimentoGatos.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">alimentoCgatos</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-<!--contenedor Carrito-->
-
-    <div id="generalCarrito">
-    <div id="contentCarrito" class="card-group">
-
-    </div>
-
-  </div>
-  <p>Total : <span id="total"></span></p>
-  </div>
-
-
-
+    <section class="container">
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./assets/fotos/alimentoGatos1.jpg"
+              class="card-img-top"
+              alt="alimentoAgatos"
+            />
+            <div class="card-body">
+              <h5 class="card-title">alimentoAgatos</h5>
+              <p class="card-text">
+                id:004, nombre: "alimentoAgatos", peso: 1, precio: 1000
+              </p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./assets/fotos/alimentoGatos1.jpg"
+              class="card-img-top"
+              alt="alimentoBgatos"
+            />
+            <div class="card-body">
+              <h5 class="card-title">alimentoBgatos</h5>
+              <p class="card-text">
+                id:005, nombre: "alimentoBgatos", peso: 3, precio: 1500
+              </p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./assets/fotos/alimentoGatos1.jpg"
+              class="card-img-top"
+              alt="alimentoCgatos"
+            />
+            <div class="card-body">
+              <h5 class="card-title">alimentoCgatos</h5>
+              <p class="card-text">
+                id:006, nombre: "alimentoCgatos", peso: 55, precio: 2000
+              </p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <ul>
         <li>

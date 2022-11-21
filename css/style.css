@@ -4,12 +4,40 @@
   box-sizing: border-box;
 }
 
-.main {
-  background-color: rgb(167, 202, 202);
-  height: 90vh;
+.main{
+  background-image: url('../assets/fotos/TavoYeiko1.jpg');
+  background-size: cover;
+  
+  /* background-color: rgb(167, 202, 202); */
+  height: 80vh;
 }
 
+.container{
+  background-color: rgb(151, 192, 192);
+}
+
+.card-title{
+  text-align: center;
+}
+
+.card-text{
+  text-align: center;
+}
+
+.row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+
+/* .card{
+  
+  border: solid, black, 10px;
+} */
+
 .main-quienes-somos {
+  
   background-color: rgb(167, 202, 202);
   height: 90vh;
 }
@@ -25,7 +53,12 @@
 }
 
 
-
+/* .container{
+background-color: lightsteelblue;
+gap: 3px;
+padding-top: 5.5px;
+padding-bottom: 1.5px;
+} */
 
 
 .main-galeria {
