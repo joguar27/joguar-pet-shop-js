@@ -632,48 +632,51 @@
 const productos = [
   { id: 001, nombre: "alimentoAperros", peso: 5, precio: 5000 },
   { id: 002, nombre: "alimentoBperros", peso: 10, precio: 8000 },
-  //{ id: 003, nombre: "alimentoCperros", peso: 15, precio: 10000 },
+  { id: 003, nombre: "alimentoCperros", peso: 15, precio: 10000 },
   { id: 004, nombre: "alimentoAgatos", peso: 1, precio: 1000 },
   { id: 005, nombre: "alimentoBgatos", peso: 3, precio: 1500 },
-  //{ id: 006, nombre: "alimentoCgatos", peso: 5, precio: 2000 },
+  { id: 006, nombre: "alimentoCgatos", peso: 5, precio: 2000 },
 ];
 
 let shopContent = document.getElementById("shopContent");
+//console.log("shop Content")
 const verCarrito = document.getElementById("btn-carrito");
-console.log("verCarrito");
+//console.log("ver Carrito");
 const contenidoCarrito = document.getElementById("contentCarrito");
+//console.log("contenido Carrito")
 const generalCarrito = document.getElementById("generalCarrito");
+//console.log("general Carrito")
 const spanTotal = document.getElementById("total");
+//console.log("total")
+const vaciarCarrito = document.getElementById("vaciarCarrito");
+//console.log("vaciar carrito")
+const botonComprar = document.getElementById("botonComprar");
+//console.log("hola boton comprar")
+//console.log("shopContent");
 
-console.log("shopContent");
+ productos.forEach((product) => {
+  product.img = product.img,
+  product.id = product.id,
+  product.nombre = product.nombre,
+  product.peso = product.peso,
+  product.precio = product.precio,
+      //console.log(productos)
 
-productos.forEach((product) => {
-  let content = document.createElement("div");
-  content.className = "card";
-  content.style.width = "18rem";
-  content.innerHTML = `
-  <img src="${product.img}"/>
-  <h3>${product.nombre}</h3>
-  <p>${product.precio}</p>
-  `;
 
-  let comprar = document.createElement("button");
-  comprar.innerHTML = "comprar";
-  comprar.className = "btn btn-primary";
-  content.append(comprar);
 
-  shopContent.append(content);
 
-  comprar.addEventListener("click", () => {
-    carrito.push({
-      id: product.id,
-      nombre: product.nombre,
-      precio: product.precio,
-      img: product.img,
-    });
-    console.log(carrito);
+
+  //let botonComprar = document.getElementById("botonComprar");
+
+  botonComprar.addEventListener("click", respuestaClick);
+  function respuestaClick () {
+    console.log("respuestaClick")
+  
+  botonComprar.addEventListener("click", () => {
+    
   });
-});
+
+}
 
 let carrito = [];
 
@@ -691,7 +694,7 @@ function actualizarCarrito() {
     <button class="delete-producto btn btn-danger">Eliminar</button>
     `;
     contenidoCarrito.append(carritoContent);
-
+  
     let eliminar = carritoContent.querySelector(".delete-producto");
     console.log(eliminar);
 
@@ -716,8 +719,8 @@ const eliminarProducto = (id) => {
     return carritoId != foundId;
   });
   actualizarCarrito();
-};
+}
 
-// function probando(){
-//   console.log("probando")
-// }
+function probando() {
+  console.log(probando)
+}
